@@ -29,6 +29,8 @@ document.querySelectorAll('h1, h2').forEach(heading =>{
         li.appendChild(a);
         //submenu container maken
         const subUl = document.createElement('ul');
+        //zie cyan kleur
+        subUl.className = 'ulcreate' 
         li.appendChild(subUl);
 
         ul.appendChild(li);

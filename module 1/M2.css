@@ -1,0 +1,22 @@
+#container{
+    background-color: rgb(203, 203, 203);
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+}
+#grid{
+    background-color: rgb(224, 145, 145);
+    gap: 5px;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div1class{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border:  1px solid rgb(0, 0, 0);
+}
+#stats{
+    padding: 20px;
+}
