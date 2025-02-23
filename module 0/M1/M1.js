@@ -1,15 +1,16 @@
 'use strict'
 
-
 const getal1Input = document.getElementById('getal1');
-const getal2Input= document.getElementById('getal2');
-const berekenKnop = document.getElementById('bereken');
-const resultaatid = document.getElementById('resultaat');
+const getal2Input = document.getElementById('getal2');
+const buttonBerekening = document.getElementById('bereken');
+const resultaatParagraaf = document.getElementById('resultaat');
+//eventlistener voor de button
+buttonBerekening.addEventListener('click', function(){
+    const nummer1 = Number(getal1Input.value);
+    const nummer2 = Number(getal2Input.value);
 
-berekenKnop.addEventListener('click' , () =>{
-const nr1 = Number(getal1Input.value);
-const nr2 = Number(getal2Input.value);
-
-const som = nr1 + nr2;
-resultaatid.textContent = som;
-});
+    const som = nummer1 + nummer2;
+    
+   
+    resultaatParagraaf.textContent = `Resultaat ${som}`;
+})
