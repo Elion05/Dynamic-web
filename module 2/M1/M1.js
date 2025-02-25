@@ -48,7 +48,7 @@ function updateCart(){
     for(let item of cartItems){
         const li = document.createElement('li');
         li.innerHTML = `
-        ${item.name} - €${item.price.toFixed(2)}//2 cijfer na de koma
+        ${item.name} - €${item.price.toFixed(2)} <!-*2 cijfer na de koma*--!>
         <button onclick="removeItem('${item.name}')">X</button>
         `;
         cartList.appendChild(li);
