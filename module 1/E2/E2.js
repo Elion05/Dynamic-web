@@ -12,5 +12,7 @@ loadingMessage.textContent = 'Welcome to my website';
 //Het laten verbergen na 2 seconden of meer kies
 setTimeout(function(){
    loadingMessage.style.display = 'none'; 
-}, 4000);
+}, 2000);
 })
+
+

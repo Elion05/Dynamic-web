@@ -1,6 +1,8 @@
 'use strict'
 
 
+
+
 const nav = document.getElementById('mainMenu');
 const headings ={
     h1: document.getElementsByTagName('h1'),

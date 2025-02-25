@@ -1,33 +1,37 @@
 "use strict"
 
 
-
 let score = 0;
-let naam = prompt("wat is je naam");
-alert(`Welkom bij de quiz ${naam}!`);
+let naam = prompt('wat is je naam?');
+alert(`Welcome ${naam}! Laten we een quiz spelen. `);
 
-//vragen
-let antwoord1 = prompt("Wat is fortnite?");
-if(antwoord1.toLowerCase().includes("game")){
-    alert("Dat is juist. ");
+let vraag1 = prompt('Vraag 1, wat is de hoofdstad van België? ');
+if(vraag1.toLowerCase().includes('brussel')){
+    alert('Je hebt het juist! ');
     score++;
 }else{
-    alert("Je hebt het niet goed.");
-}
-
-let antwoord2 = prompt("Op hoeveel graden cookt water?");
-if(antwoord2.toLowerCase().includes("100 graden")){
-    alert("Dat is juist. ");
+    alert('Je hebt het fout.');
+};
+alert('Volgende vraag.')
+let vraag2 = prompt('Vraag 2, Heeft een paard een hoofd of een kop?');
+if(vraag2.toLowerCase().includes('hoofd')){
+    alert('Je hebt het juist!');
     score++;
 }else{
-    alert("Dat is fout");
-}
-
-let antwoord3 = prompt("Wie is de goat van voetbal? ");
-if(antwoord3.toLowerCase().includes("messi")){
-alert("Ja, dat is juist.");
-score++;
+    alert('Neen, je hebt het fout. ')
+};
+alert('Laatste vraag')
+let vraag3 = prompt('Vraag 3, Is de aarde rond of plat? ');
+if(vraag3.toLowerCase().includes('rond')){
+    alert('Ja, je hebt het juist!')
+    score++;
 }else{
-    alert("Neen, dat is niet juist. ");
-}
-alert(`${naam}, je score is ${score}/3`);
+    alert('Neen , jij donut, hoe kan je dit nou fout hebben.')
+};
+
+alert(`Je totale score is: ${score}.`);
+if(score < 3){
+    alert('Je had bijna alles juist.')
+}else{
+    alert('Gefeliciteerd met de totale overwinning! ')
+;}

@@ -10,4 +10,11 @@
 let tagelement = document.getElementsByTagName('p');
 for(let element of tagelement){
     element.style.backgroundColor = 'green'
-}
+};
+//de eerste element van h2
+const pagetitel = document.querySelector("h2");
+console.log(pagetitel)
+
+
+const divDivs = document.querySelectorAll('div');
+console.log(divDivs)

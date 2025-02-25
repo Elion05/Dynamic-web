@@ -4,6 +4,7 @@ let specialElement = document.querySelectorAll(`.special`);
 //maakt ze rood
 specialElement.forEach(element => {
     element.style.color = 'red';
+    element.style.textDecoration = 'underline'
 });
 
 //onderlijnt de 'p' op de juiste plaats
