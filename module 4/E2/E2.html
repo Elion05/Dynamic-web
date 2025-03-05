@@ -8,17 +8,58 @@
 <body>
 
     <style>
+
+        body{
+            background-color: rgb(122, 122, 110);
+        }
             .product-card{
                 border: 50px;
                 margin: 5px;
                 border-radius: 25px;
-                background-color: rgba(198, 196, 196, 0.467);
+                background-color: rgba(188, 159, 159, 0.467);
                 align-content: center;
                 padding: 15px;
                 width: 500px;
-               
+               }
+
+
+               .navbar{
+                background-color: rgba(136, 116, 116, 0);
+                list-style: none;
+               }
+               .navbar ul{
+                text-align: center;
+               }
+               .navbar li{
+                padding: 20px;
+                margin: 10px;
+                display: inline-block;
+               }
+               .navbar a:hover{
+                transition: 0.8s ;
+                background-color: rgba(195, 182, 165, 0.796);
+                border-radius: 10px;
+                text-decoration: underline;
+               }
+               .navbar a{
+                display: block;
+                padding: 1rem;
+                text-decoration: none;
+                color: wheat;
                }
     </style>
+
+
+
+<nav class="navbar">
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">phone</a></li>
+                <li><a href="">list</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+</nav>
     <h1>Onze assortimenten</h1>
 
     <div id="output"></div>
