@@ -99,8 +99,13 @@ class Spaarrekening extends  Bankrekening{
 };
 
 
-const rekening1 = new Bankrekening("Jan Berkmans", 500)
+const rekening0 = new Bankrekening("Jan Berkmans", 5486.00)
+const rekening1 = new Bankrekening("Tom tomtom", 65555.00)
+const spaarrekening = new Spaarrekening('Tom', 50, 5);
 
-alert(rekening1.overzicht);
+console.log(spaarrekening.overzicht);
+spaarrekening.renteToevoegen();
+
+console.log(rekening0.overzicht)
 
 
