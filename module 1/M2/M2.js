@@ -5,7 +5,7 @@ let redCount = document.getElementById('redCount');
 let blueCount = document.getElementById('blueCount');
 let greenCount = document.getElementById('greenCount');
 //om 25 elementen te maken maak je een for loop
-for(let index = 0; index < 40; index++){
+for(let index = 0; index < 9; index++){
     const cell = document.createElement('div')
     cell.className = 'div1class'
     grid.appendChild(cell);
