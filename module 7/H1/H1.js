@@ -11,8 +11,9 @@ const users = [
 const getUser = (userId) => {
     // Bug 1: Probeer te vinden waarom dit soms crasht
     const user = users.find(u => u.id === userId);
+    //bug 1 oplossing
     if(!user){
-        throw new Error(`gebruiker niet gevonden met id ${userId} niet gevonden`); 
+        throw new Error(`gebruiker niet gevonden met id ${userId}.`); 
     };
     return user.name;
 };
@@ -38,7 +39,7 @@ const formatEmail = (email) => {
 // Functie om gebruikers te verwerken
 const processUsers = () => {
     // Bug 4: Loop probleem
-    for (let i = 1; i <= users.length; i++) {
+    for (let i = 0; i <= users.length; i++) {
         try {
             const user = getUser(i);
             const isAdmin = checkAdminRights(i);
@@ -46,13 +47,12 @@ const processUsers = () => {
             console.log(`Verwerkt: ${user} (Admin: ${isAdmin}) - ${formattedEmail}`);
         } catch (error) {
             // Bug 5: Deze error logging is niet informatief genoeg
-            console.log("Er ging iets mis");
+            console.error(`Er is iets miss gegaan.`, error);
         }
     
     }
 };
 // Start het proces
-
 processUsers();
 
 
